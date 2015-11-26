@@ -1,11 +1,18 @@
 <template name="products">
-<ul>
-    {{#each products}}
-    <li>
-        {{name}}
-    </li>
-    {{else}}
-    <li>There are no products yet.</li>
-    {{/each}}
-</ul>
+<h3>Products</h3>
+{{#each products}}
+<div class="row">
+    <div class="col-md-2">
+    <img src="{{image}}" alt="Picture of {{name}}" class="full">
+    </div>
+    <div class="col-md-10">
+        <h4>{{name}}</h4>
+        <p>Average Rating: [RATING]</p>
+        <p>{{truncateText description 150}}</p>
+        <a href="{{pathFor 'product'}}" class="btn btn-default">Read reviews</a> <a href="{{pathFor 'newReview'}}" class="btn btn-primary">Add a review</a>
+    </div>
+</div>
+{{else}}
+<p>There are no products yet.</p>
+{{/each}}
 </template>
