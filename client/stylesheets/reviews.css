@@ -12,3 +12,8 @@ footer {
 .full {
     width: 100%;
 }
+.product-row {
+    border-bottom: #ccc 1px solid;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+}
