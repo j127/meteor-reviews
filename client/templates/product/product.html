@@ -9,6 +9,7 @@
         <p>Average Rating: </p>
         <p>{{description}}</p>
     </div>
+    {{#if currentUser}}
     <div class="row">
         <div class="col-md-12">
             <div class="text-right">
@@ -16,6 +17,7 @@
             </div>
         </div>
     </div>
+    {{/if}}
     <hr>
     <h4>Reviews &amp; Ratings</h4>
     {{#each reviews}}
