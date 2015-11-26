@@ -23,3 +23,4 @@ twbs:bootstrap
 mrt:flash-messages
 cfs:standard-packages
 cfs:gridfs
+momentjs:moment
