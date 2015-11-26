@@ -1,9 +1,11 @@
 <template name="products">
-<ol>
+<ul>
     {{#each products}}
     <li>
         {{name}}
     </li>
+    {{else}}
+    <li>There are no products yet.</li>
     {{/each}}
-</ol>
+</ul>
 </template>
