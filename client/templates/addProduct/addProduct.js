@@ -38,7 +38,7 @@ Template.addProduct.events({
         e.target.description.value = '';
         e.target.isFeatured.value = '';
 
-        FlashMessage.sendSuccess('Product added');
+        FlashMessages.sendSuccess('Product added');
         Router.go('/');
         return false;
     }
